@@ -18,7 +18,7 @@ public class FromJSON {
     public static double getPrice(JSONObject jsonObject, String currencyName){
         try {
             jsonObject = jsonObject.getJSONObject("rates");
-            return Double.parseDouble(jsonObject.getString(currencyName));
+            return jsonObject.getDouble(currencyName);
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
