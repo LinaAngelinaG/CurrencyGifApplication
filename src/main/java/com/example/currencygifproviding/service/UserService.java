@@ -2,13 +2,11 @@ package com.example.currencygifproviding.service;
 
 import com.example.currencygifproviding.client.CurrencyClient;
 import com.example.currencygifproviding.client.GifClient;
-import lombok.RequiredArgsConstructor;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.google.gson.Gson;
-
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
